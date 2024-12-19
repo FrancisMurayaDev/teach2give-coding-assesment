@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Test Questions</title>
+</head>
+<body>
+
+
+
+  <script>
+
+    //1. Counting Vowels in JavaScript
+
+    function countVowels (str) {
+      const vowels = 'aeiouAEIOU';
+      let count = 0;
+      for(let char of str) {
+        if (vowels.includes(char)) {
+          count++
+        }
+      }
+      return count;
+    }
+    console.log (countVowels('Hello World'));
+    console.log (countVowels('The quick brown fox'));
+    console.log (countVowels('AEIOU'));
+    console.log (countVowels('Python Programming'));
+
+    //2. Reversing a String in JavaScript
+
+    function reverseString (str) {
+      return str.split('').reverse().join('');
+    }
+    console.log(reverseString('hello'));
+    console.log(reverseString('JavaScript'));
+    console.log(reverseString('12345'));
+    console.log(reverseString('A man a plan a canal panama'));
+
+    //3. Filtering Even Numbers in Javascript.
+    
+    function filterEvenNumbers (arr) {
+      return arr.filter(num=> num % 2 === 0);
+    }
+    console.log(filterEvenNumbers([1, 2, 3, 4, 5]));
+    console.log(filterEvenNumbers([10, 15, 20, 25]));
+    console.log(filterEvenNumbers([7, 11, 13]));
+    console.log(filterEvenNumbers([0, -2, -4]));
+  </script>
+  
+</body>
+</html>
